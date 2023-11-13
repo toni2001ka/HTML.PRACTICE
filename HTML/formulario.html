@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="">
+
+        <label for="numero"> Numero:: </label>
+        <input type="number" name="número" id="numero" placeholder="ingrese un numero"><!--este label solo permite numeros-->
+
+        <br><br>
+        <label for="nombre"> Nombre:: </label>
+        <input type="text" name="Nombre" id = "nombre"placeholder="ingrese un nombre" required><!--el atributo required nos reclama un valor
+        en un campo vacio,sino no envia los datos-->
+
+        <br><br>
+        <label for="email"> Email:: </label>
+        <input type="email" name="email" id="email" placeholder="ingrese un e-mail" autofocus><!--autofocus situa el puntero en un campo donde
+        quiere que empecemos-->
+
+        <br><br>
+        <label for="pass"> Contraseña:: </label>
+        <input type="password" name="pass" id="pass"placeholder="ingrese una contraseña"><!--podemos entrar texto o numeros, lo veremos oculto-->
+
+        <br><br>
+        <input type="submit" value="enviar" name="guardar"><!--hacemos un boton para presentar(submit) y guardar
+        cuando hago el submit y lo envia, aparece toda la informacion del formulario en la URL, los datos son visibles,
+        con el method="post" se ocultan pero la pagina comunica que nos funciona
+        Placeholder nos permite poner un pequeño texto dentro del formulario, desaparece cuando escribimos en el formulario-->
+
+
+    </form>
+
+
+    
+</body>
+</html>
